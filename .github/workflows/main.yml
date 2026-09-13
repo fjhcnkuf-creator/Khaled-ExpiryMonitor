@@ -18,7 +18,8 @@ jobs:
           java-version: '17'
 
       - name: Build APK
-        gradle assembleDebug
+      
+      run gradle assembleDebug
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
